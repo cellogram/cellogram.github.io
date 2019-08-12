@@ -3,7 +3,7 @@
 
 <h1>Cellogram Documentation</h1>
 
-## Required software and installation guides
+## Requirements
 
 Cellogram does not require any commercial software and was tested on
 Windows 10 Enterprise and Mac OS X 10.14. The executable is not signed,

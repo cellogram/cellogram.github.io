@@ -16,3 +16,7 @@ Instructions to build the website:
    ```
    mkdocs build
    ```
+5. Read offline website (you can also checkout `master` directly)
+   ```
+   firefox site/index.html
+   ```
