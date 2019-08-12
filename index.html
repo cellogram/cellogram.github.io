@@ -1,0 +1,460 @@
+<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="description" content="Automatic registration of deformed cell arrays."><link rel="canonical" href="https://geometryprocessing.github.io/cellogram-website/"><meta name="lang:clipboard.copy" content="Copy to clipboard"><meta name="lang:clipboard.copied" content="Copied to clipboard"><meta name="lang:search.language" content="en"><meta name="lang:search.pipeline.stopwords" content="True"><meta name="lang:search.pipeline.trimmer" content="True"><meta name="lang:search.result.none" content="No matching documents"><meta name="lang:search.result.one" content="1 matching document"><meta name="lang:search.result.other" content="# matching documents"><meta name="lang:search.tokenizer" content="[\s\-]+"><link rel="shortcut icon" href="favicon.ico"><meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.3.0"><title>cellogram</title><link rel="stylesheet" href="assets/stylesheets/application.4031d38b.css"><link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css"><meta name="theme-color" content="#ab47bc"><script src="assets/javascripts/modernizr.74668098.js"></script><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=swap"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel="stylesheet" href="assets/fonts/material-icons.css"></head><body dir="ltr" data-md-color-primary="purple" data-md-color-accent="purple"><svg class="md-svg"><defs><svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg></defs></svg> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label><a href="#introduction" tabindex="1" class="md-skip">Skip to content </a><header class="md-header" data-md-component="header"><nav class="md-header-nav md-grid"><div class="md-flex"><div class="md-flex__cell md-flex__cell--shrink"><a href="https://geometryprocessing.github.io/cellogram-website/" title="cellogram" class="md-header-nav__button md-logo"><i class="md-icon"> </i></a></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label></div><div class="md-flex__cell md-flex__cell--stretch"><div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"><span class="md-header-nav__topic">cellogram</span><span class="md-header-nav__topic">Home</span></div></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--search md-header-nav__button" for="__search"></label><div class="md-search" data-md-component="search" role="dialog"><label class="md-search__overlay" for="__search"></label><div class="md-search__inner" role="search"><form class="md-search__form" name="search"><input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active"> <label class="md-icon md-search__icon" for="__search"></label> <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">&#xE5CD;</button></form><div class="md-search__output"><div class="md-search__scrollwrap" data-md-scrollfix><div class="md-search-result" data-md-component="result"><div class="md-search-result__meta">Type to start searching</div><ol class="md-search-result__list"></ol></div></div></div></div></div></div><div class="md-flex__cell md-flex__cell--shrink"><div class="md-header-nav__source"><a href="https://github.com/geometryprocessing/cellogram-website/" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">geometryprocessing/cellogram-website</div></a></div></div></div></nav></header><div class="md-container"><main class="md-main"><div class="md-main__inner md-grid" data-md-component="container"><div class="md-sidebar md-sidebar--primary" data-md-component="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary" data-md-level="0"><label class="md-nav__title md-nav__title--site" for="__drawer"><a href="https://geometryprocessing.github.io/cellogram-website/" title="cellogram" class="md-nav__button md-logo"><i class="md-icon"> </i></a>cellogram</label><div class="md-nav__source"><a href="https://github.com/geometryprocessing/cellogram-website/" title="Go to repository" class="md-source" data-md-source="github"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__github" width="24" height="24"></use></svg></div><div class="md-source__repository">geometryprocessing/cellogram-website</div></a></div><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item md-nav__item--active"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc"><label class="md-nav__link md-nav__link--active" for="__toc">Home</label><a href="." title="Home" class="md-nav__link md-nav__link--active">Home</a><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#required-software-and-installation-guides" title="Required software and installation guides" class="md-nav__link">Required software and installation guides</a></li></ul></nav></li><li class="md-nav__item"><a href="tutorial/" title="Tutorial" class="md-nav__link">Tutorial</a></li></ul></nav></div></div></div><div class="md-sidebar md-sidebar--secondary" data-md-component="toc"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#required-software-and-installation-guides" title="Required software and installation guides" class="md-nav__link">Required software and installation guides</a></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset"><a href="https://github.com/geometryprocessing/cellogram-website/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a><p>Tobias Lendenmann<sup>1,2</sup>, Teseo Schneider<sup>2</sup>, Jérémie Dumas<sup>2,3</sup>, Marco
+Tarini<sup>4</sup>, Apratim Bajpai<sup>5</sup>, Weiqiang Chen<sup>5</sup>, Dimos Poulikakos<sup>1</sup>,
+Aldo Ferrari<sup>7,1,6</sup>*, Daniele Panozzo<sup>2</sup>*</p>
+<p>1 ETH Zurich, Laboratory of Thermodynamics in Emerging Technologies,
+8092 Zurich, Switzerland</p>
+<p>2 New York University, Courant Institute of Mathematical Sciences, New
+York 10003, USA</p>
+<p>3 nTopology, New York 10013, USA</p>
+<p>4 Università degli Studi di Milano, Department of Computer Science,
+20133 Milano, Italy</p>
+<p>5 New York University, Department of Mechanical and Aerospace
+Engineering, New York 11201, USA</p>
+<p>6 ETH Zurich, Institute for Mechanical Systems, 8092 Zürich, Switzerland</p>
+<p>7 EMPA, Swiss Federal Laboratories for Materials Science and Technology,
+8600 Dübendorf, Switzerland</p>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
+<p>The Cellogram software package contains custom-developed software for
+the analysis of reference free traction force images. The software
+comprises of marker detection, reference position estimation and finite
+element analysis in order to compute surface traction fields. Details on
+the underlying algorithms are provided in the supplementary information.</p>
+<p>The entire code is contained in <em>&ldquo;src&rdquo;</em> folder. The Cellogram binary is
+in the <em>&ldquo;binary&rdquo;</em> folder (there is no need to compile the code).</p>
+<p>A folder with examples of deformed quantum dot arrays and pillars are
+provided in the <em>&ldquo;data&rdquo;</em> folder.</p>
+<h2 id="required-software-and-installation-guides">Required software and installation guides<a class="headerlink" href="#required-software-and-installation-guides" title="Permanent link">&para;</a></h2>
+<p>Cellogram does not require any commercial software and was tested on
+Windows 10 Enterprise and Mac OS X 10.14. The executable is not signed,
+therefore on Mac it requires to enable the option to run untrusted
+applications. The simplest way is to right click on Cellogram, select
+&ldquo;open&rdquo; and allow it to open in any subsequent dialogues. Note that you
+might need to allow running apps from not coming from the apple store.
+To do so, go to <em>&ldquo;System Preferences&rdquo;</em> <em>&ldquo;Security &amp; Privacy&rdquo;</em> the
+General tab and click the <em>&ldquo;App Store and identified developers&rdquo;</em> radio
+button (this step requires admin priviledges).</p>
+<h1 id="cellogram-instructions">Cellogram instructions<a class="headerlink" href="#cellogram-instructions" title="Permanent link">&para;</a></h1>
+<p>This section explains the most important steps to calculate the traction
+forces for an image. For a detailed explanation of all the fields, see
+Section 4. Save the progress at any time during this process by clicking
+<em>&ldquo;File&rdquo;</em> <em>&ldquo;Save&rdquo;</em> or the floppy disk icon.</p>
+<h2 id="loading-image">Loading image<a class="headerlink" href="#loading-image" title="Permanent link">&para;</a></h2>
+<p>The mouse navigates in the user interface (UI). Right click and drag
+moves the field of view. The mouse wheel zooms in and out. When
+Cellogram starts up there is no image loaded. First, click on the <em>&ldquo;Load
+Image&rdquo;</em> in the UI or select <em>&ldquo;File&rdquo;</em> <em>&ldquo;Load Image&rdquo;</em> (<em>Figure 1: Stage 1
+- Detection</em>). Navigate to a grayscale image in Portable Network
+Graphics (png) or Tagged Image File Format (tiff) format and select and
+load the image. The image should appear as seen in the screenshot in
+Figure 1.</p>
+<p><img alt="" src="media/image1.png" /></p>
+<p><strong>Figure</strong> <strong>1.</strong> Stage 1 - Detection</p>
+<h2 id="marker-detection">Marker detection<a class="headerlink" href="#marker-detection" title="Permanent link">&para;</a></h2>
+<p>For the detection of the markers Gaussian are fitted in the image. The
+fields under <em>&ldquo;Stage 1 &ndash; Detection&rdquo;</em> are <em>&ldquo;Sigma&rdquo;</em> which determines the
+size of the Gaussian that are fitted. A good starting value for is 1.5
+and 3 for QDs and pillars, respectively. This value may need to adjusted
+depending on magnification and marker size. To start detection click on
+the <em>&ldquo;Detect&rdquo;</em> button. In case markers are missed, or detected
+incorrectly they can be added or deleted under <em>&ldquo;Advanced vertex
+options&rdquo;</em> or with the hot-keys <em>&ldquo;a&rdquo;</em> and <em>&ldquo;d&rdquo;</em>.</p>
+<h2 id="reference-estimation">Reference estimation<a class="headerlink" href="#reference-estimation" title="Permanent link">&para;</a></h2>
+<p>The connectivity of the mesh is found by clicking on the right arrow
+button in <em>&ldquo;Stage 1 &ndash; Detection&rdquo;</em> menu (<em>Figure 1</em>). If the meshing
+step finds missing or surplus markers, it fixes them. Removed markers
+are marked orange, while added markers are green. Should there be added
+marker, the user has the option to move the added marker to the correct
+position by clicking <em>&ldquo;Move vertex&rdquo;</em> in the <em>&ldquo;Stage 2 &ndash; Meshing&rdquo;</em> menu
+before proceeding. Next click on the right arrow button to relax the
+mesh and find the reference position. The displacements become visible
+(<em>Figure 2</em>).</p>
+<p><img alt="" src="media/image2.png" /></p>
+<p><strong>Figure</strong> <strong>2.</strong> Stage 3 - Analysis</p>
+<h2 id="finite-element-analysis">Finite element analysis<a class="headerlink" href="#finite-element-analysis" title="Permanent link">&para;</a></h2>
+<p>For the finite element analysis (FEA) enter the material parameters in
+the <em>&ldquo;Stage 3 &ndash; Analysis&rdquo;</em> menu. Hover the fields to get information on
+the individual fields and units. Next click <em>&ldquo;Build volumetric mesh&rdquo;</em> to
+generate a finer mesh for the analysis (<em>Figure 2</em>). The density of the
+mesh is tuned in the <em>&ldquo;Advanced mesh option</em>&rdquo; see Section 4 for details.
+Once the mesh is available, click the right arrow button to start the
+FEA.</p>
+<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
+<p>Once the FEA is complete and the <em>&ldquo;Results&rdquo;</em> menu is visible (<em>Figure
+3</em>). At this point the process is complete but the viewer has options to
+either show the displacements <em>&ldquo;U&rdquo;</em> or the tractions <em>&ldquo;T&rdquo;</em>.</p>
+<p><img alt="C:\Users\letobias\AppData\Local\Microsoft\Windows\INetCache\Content.Word\pipeline_07.png" src="media/image3.png" />{width=&rdquo;6.291666666666667in&rdquo;
+height=&rdquo;4.28125in&rdquo;}</p>
+<p><strong>Figure</strong> <strong>3.</strong> Results</p>
+<h1 id="command-line-interface">Command-line Interface<a class="headerlink" href="#command-line-interface" title="Permanent link">&para;</a></h1>
+<p>One asset of Cellogram is the possibility to process large amounts of
+data in automatically in a batch process. For this the command-line
+interface needs to be used. The command-line interface options are
+visible in <em>Table 1</em>.</p>
+<p>-h   --help              Print help message and exit</p>
+<hr />
+<p>-i   --input      TEXT   Input image.
+  -s   --settings   TEXT   Path to json settings
+  -f   --file       TEXT   Path to saved data for scene
+  -b   --begin      INT    From which phase to run the script
+  -e   --end        INT    Until which phase to run the script
+  -c   --cmd               Run without GUI</p>
+<p><strong>Table</strong> **1*.*** Command-line interface options</p>
+<p><strong>-i --input.</strong> This input is followed by a path to the image that is
+analyzed. For a batch process, iterate over different images</p>
+<p><strong>-s --settings.</strong> This input determines the path to a json file that
+contains non-default parameters for Cellogram. The easiest way to
+generate this, is by running one image with the UI and saving a json of
+the data, which will include the settings.</p>
+<p><strong>-c.</strong> Add this flag to not show the UI. This flag is required to do
+automatic processing. If it omitted, then Cellogram will only load the
+input file and the settings, but not do any processing.</p>
+<p><strong>-f --file.</strong> If there is already data available, with which the batch
+process should start, then the path to this file is given with this
+argument. Be sure to adjust <em>&ldquo;-b&rdquo;</em> to not start from the first stage.</p>
+<p><strong>-b --begin.</strong> Followed by an integer. See below which integer to
+choose:</p>
+<p>0: Fresh start</p>
+<p>1: Start with detection</p>
+<p>2: Start with reference position estimation</p>
+<p>3: Start with FEA</p>
+<p><strong>-e --end.</strong> Followed by an integer. See below which integer to
+choose:</p>
+<p>1: End after detection</p>
+<p>2: End after reference position estimation</p>
+<p>3: End after FEA</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Start Cellogram with image and settings:</p>
+<ul>
+<li>.\Cellogram.exe -i .\TestImages\QDs\1.tif -s
+    .\TestImages\QDs\1\settings.json</li>
+</ul>
+</li>
+<li>
+<p>Start Cellogram and run full analysis with default settings</p>
+<ul>
+<li>.\Cellogram.exe -i .\test.tif -c</li>
+</ul>
+</li>
+<li>
+<p>Start Cellogram and run full analysis with custom settings</p>
+<ul>
+<li>.\Cellogram.exe -i .\test.tif -s .\settings.json -c</li>
+</ul>
+</li>
+<li>
+<p>Start Cellogram and run FEA only with custom settings and loading
+    available data</p>
+<ul>
+<li>.\Cellogram.exe -i .\test.tif -s .\settings.json -f
+    .\test\all.json -b 3 -e 3 -c</li>
+</ul>
+</li>
+</ul>
+<h1 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h1>
+<p>Many fields in the UI have tool-tips when hovered. If the tool-tips do
+not help find the explanation for every button, field and panel below.</p>
+<p><strong>Menu bar</strong></p>
+<ul>
+<li>
+<p>File</p>
+<ul>
+<li>
+<p>Load Image:</p>
+<p>To load a gray scale image (png, tiff) navigate to the directory
+where the image is stored and load it.</p>
+</li>
+<li>
+<p>Save:</p>
+<p>This will save the current scene (detected positions, mesh,
+etc.) as a json in the standard location (directory of image in
+a subdirectory with the image's name) under the standard name
+(<em>&ldquo;all&rdquo;</em>)</p>
+</li>
+<li>
+<p>Save as:</p>
+<p>Same as <em>&ldquo;Save&rdquo;</em> but gives the option to choose the directory
+and file name</p>
+</li>
+<li>
+<p>Quit:\
+    Closes Cellogram</p>
+</li>
+</ul>
+</li>
+<li>
+<p>View</p>
+<ul>
+<li>
+<p>Image:</p>
+<p>Toggle displaying the image</p>
+</li>
+<li>
+<p>Points:</p>
+<p>Toggle displaying the detected markers</p>
+</li>
+<li>
+<p>Points Color (color picker):</p>
+<p>Pick color of displayed markers</p>
+</li>
+<li>
+<p>Mesh:</p>
+<p>Toggle displaying retrieved mesh</p>
+</li>
+<li>
+<p>Mesh Color (color picker)</p>
+<p>Pick color of retrieved mesh</p>
+</li>
+<li>
+<p>Mesh Fill:</p>
+<p>Toggle the fill of the mesh faces</p>
+</li>
+<li>
+<p>Displacements:</p>
+<p>Toggle the visualization of displacements</p>
+</li>
+<li>
+<p>Traction:</p>
+<p>Toggle to show tractions</p>
+</li>
+<li>
+<p>Point size (slider):</p>
+<p>Change the displayed size of detected markers</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="input-file">Input File<a class="headerlink" href="#input-file" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Load Image</p>
+<p>Load a gray scale image (png, tiff). Navigate to the directory where
+the image is stored and load it.</p>
+</li>
+<li>
+<p>Load data (icon):</p>
+<p>If data is available as a json in the standard location (directory
+of image in a subdirectory with the image's name) under the
+standard name (<em>&ldquo;all&rdquo;</em>), this button is enabled. It will load
+previously stored data and jump to the last available stage in the
+analysis process.</p>
+</li>
+<li>
+<p>Save data (icon)</p>
+<p>Saves current scene as a json in the standard location (directory of
+image in a subdirectory with the image's name) under the standard
+name (<em>&ldquo;all&rdquo;</em>)</p>
+</li>
+</ul>
+<h2 id="stage-1-detection">Stage 1 - Detection<a class="headerlink" href="#stage-1-detection" title="Permanent link">&para;</a></h2>
+<p>In this stage, Cellogram detects the markers in the image. There are
+options for helping out the detection algorithm.</p>
+<ul>
+<li>
+<p>Sigma:</p>
+<p>Determines size of Gaussian for fitting to the markers in the image.
+If too many markers are detected, Sigma should be increased.</p>
+</li>
+<li>
+<p>Otsu:</p>
+<p>Cellogram generates a binary mask of the image at the Otsu-threshold
+level. However, this level is scaled with the factor entered here.
+If markers in dark regions are missed in the detection, lower this
+value.</p>
+</li>
+<li>
+<p>Detect:</p>
+<p>Initiates detection</p>
+</li>
+<li>
+<p>Histogram (graph):</p>
+<p>Histogram of pixel intensities in the image. Green bars left and
+right indicate the minimum and maximum value displayed.</p>
+</li>
+<li>
+<p>min (slider):</p>
+<p>Adjust the minimum pixel intensity displayed to stretch contrast in
+the image. This aids manual detection only.</p>
+</li>
+<li>
+<p>max (slider):</p>
+<p>Adjust the maximum pixel intensity displayed to stretch contrast in
+the image. This aids manual detection only.</p>
+</li>
+<li>
+<p>Advanced vertex options</p>
+<ul>
+<li>
+<p>Delete (icon):</p>
+<p>Activates deleting of incorrectly detected markers by clicking
+on them with the red crosshair. Hotkey is <em>&ldquo;d&rdquo;</em>. Deactivate by
+clicking on the <em>&ldquo;Delete&rdquo;</em> button again.</p>
+</li>
+<li>
+<p>Add (icon):</p>
+<p>Activates adding of undetected markers by clicking on them with
+the green crosshair. Hotkey is <em>&ldquo;a&rdquo;</em>. Deactivate by clicking on
+the <em>&ldquo;Add&rdquo;</em> button again.</p>
+</li>
+<li>
+<p>Move (icon):</p>
+<p>Move a vertex to a new position by dragging</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Back (icon):</p>
+<p>Removes image and detected points</p>
+</li>
+<li>
+<p>Next (icon):</p>
+<p>Advance to <em>&ldquo;Stage 2 &ndash; Meshing&rdquo;</em> by finding the mesh connectivity</p>
+</li>
+</ul>
+<h2 id="stage-2-meshing">Stage 2 - Meshing<a class="headerlink" href="#stage-2-meshing" title="Permanent link">&para;</a></h2>
+<p>In this stage, Cellogram has found a valid connectivity of the mesh and
+cleaned up incorrectly detected markers. Additionally it has added
+points that were missed during the detection.</p>
+<ul>
+<li>
+<p>Move vertex:</p>
+<p>In case there were previously undetected points added, the button to
+move points appears. Move the points to their exact position by
+clicking and dragging them.</p>
+</li>
+</ul>
+<h2 id="stage-3-analysis">Stage 3 - Analysis<a class="headerlink" href="#stage-3-analysis" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Displacement (slider):</p>
+<p>Moving this slider will move the markers between their detected and
+reference position.</p>
+</li>
+<li>
+<p>Pillars:</p>
+<p>Toggle to switch between pillars and continuous substrates.
+Selecting <em>&ldquo;Pillars&rdquo;</em> will display a different menu, as the
+processing of the two cases is different from here on out.</p>
+</li>
+</ul>
+<h3 id="stage-3-analysis-pillars">Stage 3 - Analysis - Pillars<a class="headerlink" href="#stage-3-analysis-pillars" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Scaling:</p>
+<p>The magnification in the image with respect to the actual distance
+in <em>μm/px</em>.</p>
+</li>
+<li>
+<p>E:</p>
+<p>The pillar's Young's Modulus in <em>MPa</em></p>
+</li>
+<li>
+<p>I:</p>
+<p>The pillar's area moment of inertia in <em>μm<sup>4</sup></em></p>
+</li>
+<li>
+<p>L:</p>
+<p>The pillar's length in <em>μm</em></p>
+</li>
+</ul>
+<h3 id="stage-3-analysis-continuous">Stage 3 - Analysis - Continuous<a class="headerlink" href="#stage-3-analysis-continuous" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Material Model (drop down):</p>
+<p>Selection between the material models <em>&ldquo;Linear Elasticity&rdquo;</em> or <em>&ldquo;Neo
+Hooke&rdquo;</em>. The fit for the following material parameters may differ,
+depending on the selected model.</p>
+</li>
+<li>
+<p>Scaling:</p>
+<p>The magnification in the image with respect to the actual distance
+in <em>μm/px</em>.</p>
+</li>
+<li>
+<p>E:</p>
+<p>Young's modulus in <em>kPa</em></p>
+</li>
+<li>
+<p>nu:</p>
+<p>Poisson ratio, select 0.49 for incompressible material.</p>
+</li>
+<li>
+<p>Advanced mesh options:</p>
+<ul>
+<li>
+<p>Padding:</p>
+<p>The volumetric mesh is oversized with respect to the image. This
+is to remove edge effects in μm.</p>
+</li>
+<li>
+<p>Thickness:</p>
+<p>This is the thickness of the deformable substrate μm.</p>
+</li>
+<li>
+<p>Relative Threshold:</p>
+<p>Toggle between the adaptive meshing criterium. Either the dense
+meshing is done based on a threshold with respect to the maximum
+displacement, or the median edge length. See below.</p>
+</li>
+<li>
+<p>Displ. Threshold:</p>
+<p>This threshold identifies regions that should be meshed more
+densely, i.e. the regions with higher deformations. If
+<em>&ldquo;Relative Threshold&rdquo;</em> is selected above, then threshold value
+is with respect to the maximum displacement in the image. If
+<em>&ldquo;Relative Threshold&rdquo;</em> is not selected, then the threshold value
+is with respect to the median edge length of the marker mesh.</p>
+</li>
+<li>
+<p>Edge length:</p>
+<p>Set the target edge length for the dense mesh as a percentage of
+the median marker mesh.</p>
+</li>
+<li>
+<p>Gradation:</p>
+<p>The gradation determines how strong the gradient of the mesh
+element sizes is. A higher value will lead to higher gradient,
+meaning that the mesh element will grow quickly when moving away
+from regions of high displacements.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Build volumetric mesh:</p>
+<p>This will initiate the volumetric mesh generation</p>
+</li>
+<li>
+<p>Back (icon):</p>
+<p>Go back to <em>&ldquo;Stage 2 &ndash; Meshing&rdquo;</em></p>
+</li>
+<li>
+<p>Next (icon):</p>
+<p>Run the finite element analysis</p>
+</li>
+</ul>
+<h2 id="results_1">Results<a class="headerlink" href="#results_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>View (drop down)</p>
+<p>Select the displayed metric. Either <em>&ldquo;U&rdquo;</em> for displacements, or
+<em>&ldquo;T&rdquo;</em> for tractions.</p>
+</li>
+<li>
+<p>Uview (drop down)</p>
+<p>Select the element of the metric to display. Either the magnitude or
+one of the directional components.</p>
+</li>
+<li>
+<p>Smooth results</p>
+<p>Toggle between the solution and a smoothed version of the solution.
+In the smoothed version, the constant elements are replaced by
+linear elements interpolated from their vertices.</p>
+</li>
+<li>
+<p>Colorbar</p>
+<p>Indicates the value corresponding to the colors. For displacements
+in μm, for tractions in <em>kPa</em>. For pillars, the value given is in
+<em>μN.</em></p>
+</li>
+</ul></article></div></div></main><footer class="md-footer"><div class="md-footer-nav"><nav class="md-footer-nav__inner md-grid"><a href="tutorial/" title="Tutorial" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next"><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Next</span>Tutorial</span></div><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i></div></a></nav></div><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright">powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div><div class="md-footer-social"><link rel="stylesheet" href="assets/fonts/font-awesome.css"> <a href="https://github.com/geometryprocessing/cellogram" class="md-footer-social__link fa fa-github"></a> </div></div></div></footer></div><script src="assets/javascripts/application.b260a35d.js"></script><script>app.initialize({version:"1.0.4",url:{base:"."}})</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
