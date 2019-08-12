@@ -39,6 +39,16 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+extra_javascript:
+  - 'extra.js'
 nav:
   - Home: index.md
-  - Documentation: documentation.md
+  - Documentation:
+    - Usage: usage.md
+    - Command-Line: cli.md
+    - Interface Description:
+      - Menu Bar: menu_bar.md
+      - Stage 1: stage_1.md
+      - Stage 2: stage_2.md
+      - Stage 3: stage_3.md
+      - Results: results.md

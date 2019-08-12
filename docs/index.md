@@ -38,6 +38,14 @@ in the `binary/` folder (there is no need to compile the code).
 A folder with examples of deformed quantum dot arrays and pillars are
 provided in the `data/` folder.
 
-## Documentation
+## Requirements
 
-Extended documentation is provided in the [documentation](documentation.md) page.
+Cellogram does not require any commercial software and was tested on
+Windows 10 Enterprise and Mac OS X 10.14. The executable is not signed,
+therefore on Mac it requires to enable the option to run untrusted
+applications. The simplest way is to right click on Cellogram, select
+"open" and allow it to open in any subsequent dialogues. Note that you
+might need to allow running apps from not coming from the apple store.
+To do so, go to `System Preferences > Security & Privacy` the
+General tab and click the `App Store and identified developers` radio
+button (this step requires admin priviledges).
