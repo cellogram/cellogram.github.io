@@ -1,4 +1,13 @@
-Instructions to build the website:
+## Reading the Website
+
+Simply checkout the `master` branch and open in firefox:
+```
+git clone git@github.com:geometryprocessing/cellogram-website.git
+cd cellogram-website
+firefox index.html
+```
+
+## Building the website
 
 1. Create conda environment.
    ```
