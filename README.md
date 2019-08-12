@@ -1,4 +1,4 @@
-## Reading the Website
+## Reading the website
 
 Simply checkout the `master` branch and open in firefox:
 ```
