@@ -6,7 +6,37 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/documentation.html</loc>
+     <loc>https://geometryprocessing.github.io/cellogram-website/usage.html</loc>
+     <lastmod>2019-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://geometryprocessing.github.io/cellogram-website/cli.html</loc>
+     <lastmod>2019-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://geometryprocessing.github.io/cellogram-website/menu_bar.html</loc>
+     <lastmod>2019-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://geometryprocessing.github.io/cellogram-website/stage_1.html</loc>
+     <lastmod>2019-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://geometryprocessing.github.io/cellogram-website/stage_2.html</loc>
+     <lastmod>2019-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://geometryprocessing.github.io/cellogram-website/stage_3.html</loc>
+     <lastmod>2019-08-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://geometryprocessing.github.io/cellogram-website/results.html</loc>
      <lastmod>2019-08-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
