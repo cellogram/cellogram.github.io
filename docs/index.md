@@ -57,11 +57,11 @@ button (this step requires admin priviledges).
 
 ## Download
 
-- [Paper on Nanoletters](https://pubs.acs.org/doi/10.1021/acs.nanolett.9b01505).
-- Supplemental material 1: Technical Explanation.
-- Supplemental material 2: User Documentation.
-- Download the executable.
-- [Code on github](https://github.com/cellogram/cellogram).
+- [:page_facing_up: Paper on Nanoletters](https://pubs.acs.org/doi/10.1021/acs.nanolett.9b01505).
+- :paperclip: Supplemental 1: Technical Explanation.
+- :paperclip: Supplemental 2: User Documentation.
+- :computer: Download the executable.
+- [:open_file_folder: Code on github](https://github.com/cellogram/cellogram).
 
 ![](media/render.jpg)
 
