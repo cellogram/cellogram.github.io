@@ -1,12 +1,3 @@
-## Reading the website
-
-Simply checkout the `master` branch and open in firefox:
-```
-git clone git@github.com:geometryprocessing/cellogram-website.git
-cd cellogram-website
-firefox index.html
-```
-
 ## Building the website
 
 1. Create conda environment.
@@ -21,11 +12,7 @@ firefox index.html
    ```
    mkdocs serve
    ```
-4. Build static website for offline reading.
+4. Publish new website on github
    ```
-   mkdocs build
-   ```
-5. Read offline website (you can also checkout `master` directly)
-   ```
-   firefox site/index.html
+   mkdocs gh-deploy
    ```
