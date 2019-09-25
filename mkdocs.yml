@@ -32,7 +32,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   # - pymdownx.inlinehilite
   - pymdownx.mark
   - pymdownx.smartsymbols
