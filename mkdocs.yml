@@ -1,6 +1,6 @@
 site_name: cellogram
 site_url: 'https://cellogram.github.io/'
-repo_name: 'geometryprocessing/cellogram-website'
+repo_name: 'cellogram/cellogram.github.io'
 repo_url: 'https://github.com/cellogram/cellogram'
 edit_uri: ''
 site_description: "Automatic registration of deformed cell arrays."
