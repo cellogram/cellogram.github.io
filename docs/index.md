@@ -40,7 +40,6 @@ the underlying algorithms are provided in the supplementary information.
 
 The entire code is contained in `src/` folder. The Cellogram binary is
 in the `binary/` folder (there is no need to compile the code).
-
 A folder with examples of deformed quantum dot arrays and pillars are
 provided in the `data/` folder.
 
