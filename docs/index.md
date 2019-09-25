@@ -55,6 +55,16 @@ To do so, go to `System Preferences > Security & Privacy` the
 General tab and click the `App Store and identified developers` radio
 button (this step requires admin priviledges).
 
+## Download
+
+- [Paper on Nanoletters](https://pubs.acs.org/doi/10.1021/acs.nanolett.9b01505).
+- Supplemental material 1: Technical Explanation.
+- Supplemental material 2: User Documentation.
+- Download the executable.
+- [Code on github](https://github.com/cellogram/cellogram).
+
+![](media/render.jpg)
+
 ## Citation
 
 ```bibtex
