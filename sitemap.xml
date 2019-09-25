@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/index.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/index.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/usage.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/usage.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/cli.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/cli.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/menu_bar.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/menu_bar.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/stage_1.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/stage_1.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/stage_2.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/stage_2.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/stage_3.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/stage_3.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://geometryprocessing.github.io/cellogram-website/results.html</loc>
-     <lastmod>2019-08-12</lastmod>
+     <loc>https://cellogram.github.io/results.html</loc>
+     <lastmod>2019-09-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
