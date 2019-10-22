@@ -69,13 +69,16 @@ button (this step requires admin priviledges).
 
 ```bibtex
 @article{Lendenmann:2019:COT,
-    author = {Lendenmann, Tobias and Schneider, Teseo and Dumas, Jérémie and Tarini, Marco and Giampietro, Costanza and Bajpai, Apratim and Chen, Weiqiang and Gerber, Julia and Poulikakos, Dimos and Ferrari, Aldo and Panozzo, Daniele},
+    author = {Lendenmann, Tobias and Schneider, Teseo and Dumas, J{\'{e}}r{\'{e}}mie and Tarini, Marco and Giampietro, Costanza and Bajpai, Apratim and Chen, Weiqiang and Gerber, Julia and Poulikakos, Dimos and Ferrari, Aldo and Panozzo, Daniele},
     doi = {10.1021/acs.nanolett.9b01505},
     eprint = {https://doi.org/10.1021/acs.nanolett.9b01505},
     journal = {Nano Letters},
     note = {PMID: 31538794},
-    title = {Cellogram: On-The-Fly Traction Force Microscopy},
+    number = {10},
+    pages = {6742-6750},
+    title = {Cellogram: On-the-Fly Traction Force Microscopy},
     url = {https://doi.org/10.1021/acs.nanolett.9b01505},
+    volume = {19},
     year = {2019}
 }
 ```
