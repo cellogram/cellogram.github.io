@@ -83,6 +83,16 @@ button (this step requires admin priviledges).
 }
 ```
 
+## Articleds using Cellogram
+
+- [Ferrari, Aldo. "Recent technological advancements in traction force microscopy." Biophysical Reviews (2019): 1-3.](https://doi.org/10.1007/s12551-019-00589-0)
+
+- [Panagiotakopoulou, Magdalini, et al. "Cell cycle–dependent force transmission in cancer cells." Molecular biology of the cell 29.21 (2018): 2528-2539.](https://doi.org/10.1091/mbc.E17-12-0726)
+
+- [Malinverno, Chiara, et al. "Endocytic reawakening of motility in jammed epithelia." Nature materials 16.5 (2017): 587.](https://doi.org/10.1038/nmat4848)
+
+- [Bergert, Martin, et al. "Confocal reference free traction force microscopy." Nature communications 7 (2016): 12814.](https://doi.org/10.1038/ncomms12814)
+
 ## Acknowledgments
 
 We thank Francesca Michela Pramotton, Raoul Hopf, and Magaly Reyes for input during analysis and Sally Reynolds for her artistic interpretation of Cellogram leading to the app icon. We acknowledge the Computational Image Analysis in Cell and Developmental Biology in Woods Hole for providing T.L. with C code for the detection of particles.
