@@ -83,7 +83,7 @@ button (this step requires admin priviledges).
 }
 ```
 
-## Articleds using Cellogram
+## Articles using Cellogram
 
 - [Ferrari, Aldo. "Recent technological advancements in traction force microscopy." Biophysical Reviews (2019): 1-3.](https://doi.org/10.1007/s12551-019-00589-0)
 
