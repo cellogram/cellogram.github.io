@@ -60,7 +60,7 @@ button (this step requires admin priviledges).
 - [:page_facing_up: Paper on Nanoletters](https://pubs.acs.org/doi/10.1021/acs.nanolett.9b01505).
 - [:paperclip: Supplemental Material](paper/supplementary.pdf).
 - [:notebook: User Documentation](usage.md).
-- :computer: Main Executable.
+- :computer: [Windows Executable](https://github.com/cellogram/cellogram/releases/download/v0.1/CellogramViewer.exe), ⌘ [macOS Executable](https://github.com/cellogram/cellogram/releases/download/v0.1/CellogramViewer.dmg).
 - [:open_file_folder: Source Code](https://github.com/cellogram/cellogram).
 
 ![](media/render.jpg)
